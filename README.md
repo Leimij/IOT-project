@@ -19,7 +19,5 @@ In the folder located at: /home/studio/workspace/"PROJECT"/mbed-mqtt/src/MQTTCli
 - "MQTTSN::Client<MQTTNetworkMbedOs, Countdown, MBED_CONF_MBED_MQTT_MAX_PACKET_SIZE, MBED_CONF_MBED_MQTT_MAX_CONNECTIONS> *clientSN;"
 <br>
   
-Additionally, in the folder called: ***
+Additionally, in the folder called: *** (But I'll let you know when I find it
 We made other improvements.
-
-This version makes the text clearer and more concise.
