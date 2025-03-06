@@ -1,0 +1,39 @@
+{
+    "config": {
+        "wifi-ssid": {
+            "help": "WiFi SSID",
+            "value": "\"define\""
+        },
+        "wifi-password": {
+            "help": "WiFi Password",
+            "value": "\"define\""
+        },
+        "network-interface": {
+            "help": "Options are ETHERNET, WIFI_ESP8266, WIFI_ODIN, WIFI_RTW, MESH_LOWPAN_ND, MESH_THREAD, CELLULAR_ONBOARD",
+            "value": "WIFI_ESP8266"
+        },
+        "mqtt-id": {
+            "help": "MQTT Client ID",
+            "value": "MQTTnoti"
+        },
+        "mqtt-broker-hostname": {
+            "help": "MQTT Broker resolvable hostname.",
+            "value": "test.mosquitto.org"
+        },
+        "mqtt-broker-port": {
+            "help": "MQTT Broker port",
+            "value": 1883
+        },
+        "mqtt-topic": {
+            "help": "MQTT topic to publish",
+            "value": "MQTTnoti"
+        }
+    },
+    "target_overrides": {
+        "*": {
+            "platform.stdio-convert-newlines": true,
+            "esp8266.provide-default": false,
+            "esp8266.built-in-dns": true
+        }
+    }
+}
