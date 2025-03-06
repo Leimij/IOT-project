@@ -1,9 +1,9 @@
 # IOT-project - Smart Mailbox
 
 For our Internet of Things (IoT) project, we chose to receive notifications when mail has arrived.
-
-
-
+<br>
+<br>
+<br>
 We used this GitHub repository to send MQTT messages to Node-RED: https://github.com/ARMmbed/mbed-mqtt.
 With a few modifications, we managed to build the mbed project. The code did not build without errors initially.
 
