@@ -1,6 +1,6 @@
 # IOT-project - Smart Mailbox
 
-For our Internet of Things (IoT) project, we designed a smart mailbox system that sends notifications when mail has arrived. The system is activated when the lid of the mailbox is opened. This action triggers a limit switch, which in turn activates an LED to visually indicate the status of the mailbox. When the limit switch is released, the LED turns off, signaling that the mailbox has been closed.<
+For our Internet of Things (IoT) project, we designed a smart mailbox system that sends notifications when mail has arrived. The system is activated when the lid of the mailbox is opened. This action triggers a limit switch, which in turn activates an LED to visually indicate the status of the mailbox. When the limit switch is released, the LED turns off, signaling that the mailbox has been closed.
 <br>
 <br>
 Once the limit switch is triggered, the microcontroller code begins executing. First, the Wi-Fi module is activated and connects to a predefined Wi-Fi network using the credentials stored in the system. Once the Wi-Fi connection is established, the system sends an MQTT message to the broker at test.mosquitto.org under the topic "MQTTnoti".
