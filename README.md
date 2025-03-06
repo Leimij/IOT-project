@@ -1,4 +1,3 @@
-# IOT-projekti
-# Smart Mailbox
+# IOT-project - Smart Mailbox
 
 testitestitesti
