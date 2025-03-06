@@ -1,4 +1,11 @@
+// Nucleo L432KC --- MOD WIFI ESP8266 OLIMEX
+// Nucleo L432KC D5=PB6=UART1TX --- 3 RXD
+// Nucleo L432KC D4=PB7=UART1RX --- 4 TXD
 // 
+// Nucleo L432KC 3V3 --- 1 3.3V
+// Nucleo L432KC GND --- 2 GND
+// 
+// Jimi Leino 6.3.2025
 
 #include "mbed.h"
 #include "ESP8266Interface.h"
@@ -15,7 +22,7 @@
 DigitalIn limitSwitch(A3);  // Switch
 DigitalOut led(A6);         // LED
 
-// Creates the ESP8266 WiFi interface
+// Creates the ESP8266 WiFi. RX, TX
 ESP8266Interface esp(D5, D4);
 
 // Custom strlen since string.h does not work
@@ -120,8 +127,8 @@ int main() {
                 printf("Connecting to Wi-Fi...\r\n");
 
                 if (connect_wifi() == 0) {  // If Wi-Fi connection is successful
-                    printf("Waiting for 3 seconds...\r\n");
-                    ThisThread::sleep_for(3s);
+                    printf("Waiting for 1 seconds...\r\n");
+                    ThisThread::sleep_for(1s);
 
                     send_mqtt_message();  // Send MQTT message
 
@@ -136,6 +143,6 @@ int main() {
             notificationSent = false;  // Reset notification status
         }
 
-        ThisThread::sleep_for(5s);  // Delay to slow down the loop
+        ThisThread::sleep_for(1s);  // Delay to slow down the loop
     }
 }
